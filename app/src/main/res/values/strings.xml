@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyCart</string>
+    <string name="btnDetails">Show details.</string>
+    <string name="txt_item_edited">Item edited!</string>
+
+    <!--String resources for the spinItemType.-->
+    <string-array name="spinItemTypeArray">
+        <item>Food</item>
+        <item>Toiletry</item>
+        <item>Clothing</item>
+    </string-array>
+
+</resources>

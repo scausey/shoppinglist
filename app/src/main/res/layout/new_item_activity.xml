@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="hu.ait.android.shoppinglist.NewItemActivity">
+
+    <include layout="@layout/activity_toolbar"></include>
+
+    <!--Limit amount of characters that can go in this field if time.-->
+    <EditText
+        android:id="@+id/etItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Item name" />
+
+    <TextView
+        android:id="@+id/tvItemType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item type:"/>
+
+    <Spinner
+        android:id="@+id/spinItemType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etEstimatedPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Estimated price" />
+
+    <EditText
+        android:id="@+id/etItemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Item description" />
+
+    <CheckBox
+        android:id="@+id/cbPurchased"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already purchased?"/>
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_centerInParent="true" />
+</LinearLayout>

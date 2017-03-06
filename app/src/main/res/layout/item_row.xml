@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:paddingTop="0dp">
+
+    <!--Describes layout of individual items.-->
+
+    <ImageView
+        android:id="@+id/imgItemType"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="7dp"
+        android:src="@drawable/food_icon"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/imgItemType"
+        android:layout_toEndOf="@+id/imgItemType" />
+
+    <TextView
+        android:id="@+id/tvEstimatedPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgItemType"
+        android:layout_toEndOf="@+id/imgItemType"
+        android:layout_below="@+id/tvItemName"
+        android:text="Shopping item estimated price." />
+
+    <CheckBox
+        android:id="@+id/cbPurchased"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:text="Purchased"
+        android:layout_toRightOf="@+id/imgItemType"
+        android:layout_toEndOf="@+id/imgItemType"
+        android:layout_below="@+id/tvEstimatedPrice"/>
+
+    <Button
+        android:id="@+id/btnEditItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="Edit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/btnDeleteItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="Delete"
+        android:layout_below="@+id/btnEditItem"
+        android:layout_alignParentRight="true"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/line_separator"
+        android:layerType="software"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/btnDeleteItem"/>
+
+</RelativeLayout>
